@@ -1,11 +1,15 @@
 export class Materia{
     private materia: string;
-    private nota: number;
+    private codMateria: string;
 
     //h
-    constructor(materia: string, nota: number){
+    constructor(materia: string, codMateria: string){
         this.materia = materia;
-        this.nota = nota;
+        this.codMateria = codMateria;
+    }
+
+    infoMateria(){
+        console.log(`Alumno: ${this.materia}, codMateria: ${this.codMateria}`)
     }
 
     
